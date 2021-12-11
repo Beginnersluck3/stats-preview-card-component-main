@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;1,300&family=Merriweather:wght@300&display=swap');
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box
+}
+
+.container-lg {
+    background-color: hsl(244, 38%, 16%);
+    overflow: hidden;
+    border-radius: 2%;
+    width: 80%;
+    height: auto;
+    margin-top: 15%;
+    justify-content: center;
+}
+
+.lrgtxt {
+   font-size: 1.5rem;
+   color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-weight: lighter;
+    }
+
+#purpleInsights {
+    color: hsl(277, 64%, 61%);
+}
+
+#column2Img {
+   
+    background:  url(images/image-header-desktop.jpg);
+    opacity: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: lighten;
+    overflow: hidden;
+    z-index: 1;
+        }
+
+.overlay{
+    background-color: rgba(152, 66, 211, 0.63);
+    overflow: hidden;
+    z-index: 2;
+    filter: opacity(90%);
+    position: static;
+    background-size: cover;
+    height: 550px;
+    width: 700px;
+    transform: translate(-15px);
+     }
+
+#labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.6);
+    padding-right: 30%;
+    padding-top: 10%;
+}
+
+#contenthelp {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5%;
+}
+
+
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    align-self: baseline;
+}
+
+/* Media Queries */
+
+@media (max-width: 765px) {
+    #maincontent {
+        text-align: center;
+        font-size: 18px;
+    }
+    h1 {
+        text-align: center;  
+    }
+    #labels {
+        text-align: center;  
+        display: flex;
+        justify-content: center;
+        display: inline;
+        padding-right: 0%;
+        padding-top: 5%;
+    }
+    #numbers {
+        display: block;
+        
+    }
+    .attribution {
+        display: flex;
+        flex-wrap: wrap; 
+        padding-top: 50px;
+    }
+    #column2Img {
+        max-height: 200px;
+    }
+}
